@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
 }
 
 android {
@@ -8,7 +9,7 @@ android {
     compileSdk = 34
 
     buildFeatures {
-        viewBinding = true
+        dataBinding = true
     }
 
     defaultConfig {
